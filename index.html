@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modern Dashboard UI</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <body>
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+  
+  <header class="navbar">
+    <div class="navbar-left">
+      <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h16M4 12h16M4 18h16'/%3E%3C/svg%3E" id="toggleSidebar" class="menu-icon" alt="Toggle sidebar">
+      <img src="assets/shilogo.webp" class="logo" alt="Logo">
+    </div>
+    <div class="navbar-center">
+      <div class="search-container">
+        <input type="text" placeholder="Search anything..." class="search-bar">
+        <button class="search-button"><i class="fas fa-search"></i></button>
+      </div>
+    </div>
+    <div class="navbar-right">
+      <i class="fas fa-search search-icon" title="Search"></i>
+      <i class="fas fa-bell notify" title="Notifications"></i>
+      <i class="fas fa-user-circle profile-icon" title="Profile"></i>
+    </div>
+  </header>
+
+  <aside id="sidebar" class="sidebar expanded">
+    <div class="sidebar-content">
+      <a href="#" class="side-link active" title="Dashboard">
+        <i class="fas fa-tachometer-alt"></i>
+        <span class="link-text">Dashboard</span>
+      </a>
+      <a href="#" class="side-link" title="Bookings">
+        <i class="fas fa-calendar-check"></i>
+        <span class="link-text">Bookings</span>
+      </a>
+      <a href="#" class="side-link" title="Leads">
+        <i class="fas fa-users"></i>
+        <span class="link-text">Leads</span>
+      </a>
+      <a href="#" class="side-link" title="EOI">
+        <i class="fas fa-file-contract"></i>
+        <span class="link-text">EOI</span>
+      </a>
+      <div class="theme-toggle-container" title="Toggle Theme">
+        <i class="fas fa-lightbulb theme-icon"></i>
+        <div class="theme-toggle-wrapper">
+          <span class="theme-text">Dark Mode</span>
+          <label class="theme-switch">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+      <a href="#" class="side-link logout" title="Logout">
+        <i class="fas fa-sign-out-alt"></i>
+        <span class="link-text">Logout</span>
+      </a>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    
+  </main>
+</body>
+</html>
